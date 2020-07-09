@@ -1,0 +1,26 @@
+<h2>List of Posts</h1>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li><%= post.content %></li>
+    <% if user_signed_in? %>
+      <%= post.user.name %><br>
+    <% end %>
+  <% end%>
+</ul>
+
+<% if user_signed_in? %>
+  <p>
+    <%= link_to current_user.name, edit_user_registration_path %>
+  </p>
+  <p>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+  </p>
+<% else %>
+  <p>
+    <%= link_to 'Sign In', new_user_session_path %>
+  </p>
+  <p>
+    <%= link_to 'Sign Up', new_user_registration_path %>
+  </p>
+<% end %>
