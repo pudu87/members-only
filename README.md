@@ -1,24 +1,11 @@
-# README
+## Members Only
+_An exercise on authentication with Devise in Rails._
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/authentication#project-members-only)
 
-Things you may want to cover:
+### How to use it
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone this repository `git clone https://github.com/pudu87/members-only.git`
+2. `cd` into the cloned directory
+3. Run `rails server`
+4. Go to `http://localhost:3000/` on your browser and play around
